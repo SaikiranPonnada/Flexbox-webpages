@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/*1. Move Messenger*/
+.mm-image {
+    width: 90%;
+    max-width: 250px;
+    align-self: flex-start;
+}
+
+.mm-bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef7e7;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.move-messenger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 850px;
+}
+
+.mm-heading {
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #333333;
+}
+
+.mm-description {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #858a8f;
+}
+
+@media screen and (min-width: 768px) {
+    .mm-image {
+        order: 1;
+        width: 50%;
+        max-width: 400px;
+        align-self: auto;
+    }
+
+    .move-messenger-container {
+        flex-direction: row;
+    }
+
+    .mm-heading {
+        font-size: 36px;
+    }
+
+    .mm-description {
+        font-size: 18px;
+    }
+}
+
+.mm-button {
+    color: #ffffff;
+    background-color: #f1b80b;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style: none;
+}
+
+
+
+
+/*2. Travel Page*/
+
+.tp-bg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/travel-sm-bg.png");
+    min-height: 100vh;
+    background-size: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+.tp-travel-container {
+    width: 90%;
+    max-width: 450px;
+}
+
+.tp-heading {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 32px;
+    text-align: center;
+}
+
+
+.tp-description {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: center;
+}
+
+.tp-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+
+.tp-button {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 800;
+    border-radius: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.started-button {
+    color: #183b56;
+    background-color: #ffffff;
+    border: none;
+}
+
+.more-button {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .tp-bg-container {
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/travel-md-bg.png");
+    }
+
+    .tp-travel-container {
+        max-width: 600px;
+    }
+
+    .tp-heading {
+        font-size: 45px;
+    }
+
+    .tp-buttons-container {
+        flex-direction: row;
+        margin-top: 44px;
+    }
+
+    .started-button {
+        margin-right: 20px;
+    }
+
+    .more-button {
+        margin-top: 0px;
+    }
+}
+
+
+
+/*3. Design Section*/
+.ds-device-sizing {
+    display: flex;
+    flex-direction: column;
+}
+
+.ds-bg-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/design-section-sm-bg.png");
+    height: 48vh;
+}
+
+.ds-bulb-image {
+    height: 80px;
+    width: 80px;
+}
+
+.ds-bg-container {
+    background-color: #12022f;
+    padding: 20px;
+}
+
+.ds-heading {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ds-card-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ds-medium {
+    display: flex;
+}
+
+.logo {
+    margin-top: 15px;
+    height: 30px;
+    width: 40px;
+}
+
+.ds-content {
+    margin-left: 20px;
+}
+
+.ds-medium-heading {
+    color: #12022f;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.ds-medium-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+@media screen and (min-width:768px) {
+    .ds-device-sizing {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ds-bg-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/design-section-lg-bg.png");
+        height: 64vh;
+        width: 80vw;
+    }
+
+    .ds-heading {
+        font-size: 22px;
+    }
+}
